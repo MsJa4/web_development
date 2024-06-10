@@ -1,0 +1,136 @@
+html{scroll-behavior: smooth;}
+body{background-color: brown;}
+.header{
+    background: black;
+    border: solid 1px black;
+    display: flex;
+    cursor: pointer;
+
+
+}
+.header-icon{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+    display: block;
+    font-size: 40px;
+    text-align: left;
+    transition: ease-in-out 500ms;
+}
+.header-icon:hover{
+    opacity: 0.6;
+    transform: translatex(5px) scale(0.5);
+    padding-bottom: 10px;
+    
+
+}
+.headertitle{
+    width: 100%;
+    color: rgba(233, 60, 8, 0.966);
+    text-align: center;
+    padding: 10px;
+
+
+}
+.headertitle:hover{
+    opacity: 0.6;
+    color: black;
+}
+/*---card link---*/
+.card-link{
+    color: crimson;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1px;
+    background-color: none;
+    display: inline-block;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+}
+.card-link:hover{
+    background-color: whitesmoke;
+    color: crimson
+}
+
+/*---card container---*/
+.container{
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.card_1:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+    transform: scale(1.01);
+}
+.card_2:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+    transform: scale(1.01);
+}
+.card_3:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+    transform: scale(1.01);
+}
+.card_4:hover{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: ease-out 500ms;
+    transform: scale(1.01);
+}
+
+
+.card-header{
+    background-color: brown;
+
+}
+.card-header:hover{
+    color: bisque;
+}
+/*card img*/
+.card-img:hover{
+    opacity: 0.6;
+    border-radius: 10px;
+
+
+}
+/*===Footer===*/
+.contact{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    display: flex;
+    padding: 20px;
+}
+.contactcolum{
+    width: 33%;
+}
+.policieslink{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+.followicon{
+    width: 50px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 0.5;
+}
+.followicon:hover{
+    opacity: 1;
+}
+    
+    
