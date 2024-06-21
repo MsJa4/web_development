@@ -116,3 +116,71 @@ window.addEventListener("scroll", function(){
         gotop.style.display ="none"
     }
 })
+
+/**
+ * Thursday, June 20
+ * 
+ * Form Events
+ * input event 
+**/
+//get reference to the form elements//
+const myform = document.querySelector("#myform")
+//get reference to the form elements//
+const greeting = document.querySelector(".greeting")
+const greetingname = document.querySelector(".greeting p span")
+
+myform.addEventListener("submit", function(event){
+    //prevent the defult form submission behavior//
+    event.preventDefault()
+
+    //start form validation, username//
+    const usernameinput = document.querySelector("#username")
+    //collect the input text value//
+    const username = usernameinput.value
+    //Validation 1: Make sure the user types a username before pressing the submit button//
+    if (username.trim() ===""){
+        alert("Please enter a username")
+        return; //stop further execution//
+    }
+
+    //if the validtion passed, you can submit the data to the server//
+    //clinat is front end and server is backend//
+    //gretting, message afther the validation//
+    greetingname.innerHTML = username
+    greeting.style.display = "block"
+
+    //afther you submit the form you can clear the username//
+    usernameinput.value = ""
+
+})
+
+/**
+ * password validation
+ * collect from elements 
+ **/
+const passwordfield = document.querySelector("#passwordfield")
+const submitbtn = document.querySelector(".submitbtn")
+//collect the p0assword error message element//
+const passworderror = document.querySelector(".passworderror")
+
+window.addEventListener("load", function(){
+    submitbtn.disabled = true
+    submitbtn.style.backgroundColor = "lightgray"
+})
+
+//checkthe length of the password//
+passwordfield.addEventListener("input", function(){
+    let numbercharacter = passwordfield.value.length
+    if(numbercharacter<8){
+        passworderror.textContent = "Password must be 8+ charactors..."
+        passworderror.style.color = "red";
+        passwordfield.style.border ="solid 2px red"
+    }
+    else{
+        passworderror.innerHTML = "&#x2713;"
+        passworderror.style.color = "green"
+        passwordfield.style.border ="solid 2px green"
+        submitbtn.disabled = false
+        submitbtn.style.backgroundColor = "red"
+    }
+})
