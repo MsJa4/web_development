@@ -1,0 +1,24 @@
+.contact{
+    background-color: rgb(26, 30, 5);
+    color: whitesmoke;
+    display: flex;
+    padding: 20px;
+}
+.contactcolum{
+    width: 33%;
+}
+.content_link{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+.followicon{
+    width: 50px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 0.5;
+}
+.followicon:hover{
+    opacity: 1;
+}    

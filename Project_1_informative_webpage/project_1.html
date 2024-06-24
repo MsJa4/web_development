@@ -12,62 +12,67 @@
   </head>
 
   <body>
-    <header class="header">
-        <a href=""class="header-icon"><img src="fork_knife_icon.png" alt="icon"></a>
-        <h1 class="headertitle" style="position: absolute; font-family: 'Times New Roman'; font-weight: bolder;"> A Foodie's Recipe Page </h1>
-    </header>
 
-    <!--Navbar-->
-    <ul class="nav nav-underline justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Recipe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#feedback">Feedback</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
+        <!--Collapsible NavBars---------------------------------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 fixed-top">
+            <!-- create a link for logo-->
+            <a href="#" class="navbar-brand p-3"><img src="fork_knife_icon.png" alt="logo of a truck"width="50"></a>
+            <h1 class="text-light">A Foodie's Recipe Page</h1>
+      
+            <!--Create the home button-->
+            <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#collapsemenue">
+              <span>Menue</span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!--Create the dropdown menu-->
+            <div class="collapse navbar-collapse" id="collapsemenue">
+              <nav class="navbar-nav ms-auto">
+                <a href="" class="nav-item nav-link ms-3" class="nav-link active"  aria-current="page" href="#">Home</a>
+                <a href="feedback.html" class="nav-item nav-link ms-3">Feedback</a>
+                <a href="contact_us.html" class="nav-item nav-link ms-3">About Us</a>
+              </nav>
+            </div>
+          </nav>
+          <!----------------------------------------------------------------------------------------------------------------------->
+      
 
+          <!--intro statement--------------------------------------------------------------------------------------------------------->
       <main>
-        <h5>Welcome!</h5>
-        <h6>looking for tasty ideas or someone who loves to whip up yummy meals at home, finding the best recipe websites is important for you and your taste testers!</h6>
-        <h6>But, where do most people get their recipes? How do you know which food websites are the best? The online world is full of recipe sites and food blogs.</h6>
-        <h6>Lucky for you, we've cooked up a list of the 15 best recipe sites that are sure to add flavor to your day.</h6>
-        <h6>Get ready to turn up the heat in your kitchen and discover some lip-smacking recipes!</h6>
+        <h5 style= "padding-left: 100px; padding-top: 90px; text-align: center;" class="intro" >Welcome!</h5>
+        <div style="padding-left: 100px; margin: center; text-align: center ;" class="intro">
+            <h6 >looking for tasty ideas or someone who loves to whip up yummy meals at home, finding the best recipe websites is important for you and your taste testers!</h6>
+            <h6>But, where do most people get their recipes? How do you know which food websites are the best? The online world is full of recipe sites and food blogs.</h6>
+            <h6>Lucky for you, we've cooked up a list of the 15 best recipe sites that are sure to add flavor to your day.</h6>
+            <h6>Get ready to turn up the heat in your kitchen and discover some lip-smacking recipes!</h6>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------------------------->
 
-        <P>
-
-            
-            
-            
-            
-            </P>
             <!--Card Design-->
             <section class="container">
                 <div class="row justify-content-between">
                     <!--card 1-->
-                    <div class="card_1 col-xl-3 col-lg-5 col-sm-5 card bg-dark">
+                    <div class="card_1 col-xl-5 col-lg-5 col-sm-10 card bg-dark">
                         <div class="card-header">
                         <p class="card-title h2">BBQ Korean Short Ribs &hearts;</p>
-                        <p style="color: orangered;" class="card-subtitle"> <i>#1</i></p>
+                        <p style="color: white;" class="card-subtitle"> <i>#1</i></p>
                         </div>
 
-                        <div class="card-fotter">
+                        <div class="card-fotter" style="text-align: center; padding: 10px;"  >
                             <nav>
                                 <a href="https://www.yummly.com/recipe/BBQ-Korean-Short-Ribs-9024317" class="card-link">More Info</a>
-                                <a href="https://www.google.com/maps/search/korean+bbq+near+me/@40.7302166,-73.9081967,13z/data=!3m1!4b1?entry=ttu" class="card-link">Google Maps</a>
+                                <a href="https://www.google.com/maps/search/korean+bbq+near+me/@40.7302166,-73.9081967,13z/data=!3m1!4b1?entry=ttu" class="card-link">Find on Google maps</a>
                                 <a href="feedback.html" class="card-link">Feedback</a>
                             </nav>
-                            </div>
-    
+                        </div>
             
-                        <div class="card text-bg-dark mb-3" class="card-body">
-                        <img style="width: 280px; height: 180px;" src="BBQ_korean_short_ribs.jpg" alt="Photo of recipe" class="card-img">
+                        <img style="width: 280px; height: 180px;align-self: center; align-self: center;" src="BBQ_korean_short_ribs.jpg" alt="Photo of recipe" class="card-img">
                         <p style="padding: 10px;" class="card-text">
-                            <dl>
-                                <dd>4 SERVINGS</dd>
+
+                            <div class="card text-bg-dark mb-3" class="card-body">
+
+
+                            <dl style="padding-top: 15px;">
                                 <dd>US METRIC</dd>
                             </dl>
                             
@@ -87,41 +92,109 @@
                                 <li> 3 spring onions (finely chopped)</li>
                                 <li> 2 liters chicken stock (Massel Liquid)</li>
                             </ol>
+
                             <hr>
-                            <u><b>Directions</b></u>
-                            <p style="padding-bottom: 20px;">
-                                In a large pot over a stove, heat stock. Add in all ingredients except for ribs and oil and allow to simmer for 2-3 minutes.
-                                Turn heat down and place beef ribs into pot. Allow to braise for 2-3 hours.
-                                Take ribs out of pot and put into large oven tray. Take some of the braising liquid and pour into a pan over a hot stove and add oil. Reduce the liquid to a saucy consistency.
-                                Pour sauce over beef ribs in oven tray. Put into a 220 degree fan-forced oven for 5-10 minutes until outside is sticky.
-                                Serve whole or cut in between the bones for bite-sized pieces. Garnish with spring onion and serve with kim chi and rice if desired.
-                                **This can be done by the butcher. The cut is also known as ‘flanken’ and is cut across the bone on the chuck end of the short rib. The slices should be approximately ½ inch thick.
-                            </p>
+                            <table style="font-size: small;" class="table1">
+                                <tr>
+                                    <th colspan="3" style="text-align: center; text-decoration: underline;">Nutrition Facts</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="1" style="text-indent: 16%;">4 servings</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;"> Serving size</th>
+                                    <th>4 cup(580g)</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="1" style="text-indent: 16%;"><small>Ammount per serving</small></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;">Calories </th>
+                                    <th>1,885</th>
+                                </tr>
+                                <tr>
+                                <th style=></th>
+                                    <td><small>%Daily Value*</small></tb>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Total Fat 10g</th>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Saturated Fat 7g</td>
+                                    <td> 3%</td>                                    
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Trans Fat 0g</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 16%;" colspan="1">Cholesterol 0mg</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 16%;" colspan="1">Sodium 66mg</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Total Carbohydrate 50g</th>
+                                    <td>17%</td> 
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Dietary Fiber 18g</td>
+                                    <td>72%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Sugars 7g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Protein 7g</th>
+                                    <td></td> 
+                                </tr>
+                            </table>
+                            <hr>
+  
+                            <section>
+                              <button type="button" class="btn btn-light m-3" data-bs-toggle="collapse" data-bs-target="#getdirections1">Get cooking directions</button>
+                              <div class="collapes w-90 bg-dark p-5 mx-auto" id="getdirections1">
+                                    <p> <u><b>Directions</b></u>
+                                        <p style="padding-bottom: 20px;">
+                                                    In a large pot over a stove, heat stock. Add in all ingredients except for ribs and oil and allow to simmer for 2-3 minutes.
+                                                    Turn heat down and place beef ribs into pot. Allow to braise for 2-3 hours.
+                                                    Take ribs out of pot and put into large oven tray. Take some of the braising liquid and pour into a pan over a hot stove and add oil. Reduce the liquid to a saucy consistency.
+                                                    Pour sauce over beef ribs in oven tray. Put into a 220 degree fan-forced oven for 5-10 minutes until outside is sticky.
+                                                    Serve whole or cut in between the bones for bite-sized pieces. Garnish with spring onion and serve with kim chi and rice if desired.
+                                                    **This can be done by the butcher. The cut is also known as ‘flanken’ and is cut across the bone on the chuck end of the short rib. The slices should be approximately ½ inch thick.
+                                         </p>
+                                    </p>
+                                </div>
+                            </section>
+
                         </p>
                         </div>
             
                     </div>
             
                     <!--card 2-->
-                    <div class="card_2 col-xl-3 col-lg-5 col-sm-10 card bg-dark">
+                    <div class="card_2 col-xl-5 col-lg-5 col-sm-10 card bg-dark">
                         <div class="card-header">
                             <p class="card-title h2">Fiesta Chicken</p>
-                            <p style="color: orangered;" class="card-subtitle"> <i>#2</i></p>
+                            <p style="color: white;" class="card-subtitle"> <i>#2</i></p>
                             </div>
-                            <div class="card-fotter">
+                            <div class="card-fotter" style="text-align: center; padding: 10px;">
                                 <nav>
                                     <a href="https://www.wellplated.com/one-skillet-spicy-ranch-chicken/" class="card-link">More Info</a>
-                                    <a href="https://www.google.com/maps/search/fiesta+chicken+near+me/@40.730378,-74.0318061,11z/data=!3m1!4b1?entry=ttu" class="card-link">Google Maps</a>
+                                    <a href="https://www.google.com/maps/search/fiesta+chicken+near+me/@40.730378,-74.0318061,11z/data=!3m1!4b1?entry=ttu" class="card-link">Find on Google maps</a>
                                     <a href="feedback.html" class="card-link">Feedback</a>
                                 </nav>
                                 </div>
         
-                
                             <div class="card text-bg-dark mb-3" class="card-body">
-                            <img style="width: 280px; height: 180px;" src="fiestachicken.jpg" alt="Photo of recipe" class="card-img">
+                            <img style="width: 280px; height: 180px;align-self: center;" src="fiestachicken.jpg" alt="Photo of recipe" class="card-img">
                             <p style="padding: 10px;" class="card-text">
                                 <dl>
-                                    <dd>4 SERVINGS</dd>
+                                    
                                     <dd>US METRIC</dd>
                                 </dl>
                                 
@@ -147,37 +220,111 @@
                                     <li> 3/4 cup freshly grated cheddar cheese</li>
                                     <li> Optional for serving: chopped fresh cilantro, diced avocado, plain nonfat Greek yogurt (or sour cream)</li>
                                 </ol>
+
                                 <hr>
-                                <u><b>Directions</b></u>
-                                <p style="padding-bottom: 20px;" >Sauté the chicken, onion, herbs, and spices in a skillet until they start to brown.
-                                    Add the peppers, black beans, tomatoes, rice, and chicken stock.
-                                    Bring to a boil, cover, and simmer on low heat until cooked through. Let stand, covered, for 5 minutes. Top with cheese and additional toppings of your choice. ENJOY!
-                                </p>
+                                <table style="font-size: small;" class="table1">
+                                    <tr>
+                                        <th colspan="3" style="text-align: center; text-decoration: underline;">Nutrition Facts</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="text-indent: 16%;">4 servings</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;"> Serving size</th>
+                                        <th>4 cup(580g)</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="text-indent: 16%;"><small>Ammount per serving</small></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;">Calories </th>
+                                        <th>1,885</th>
+                                    </tr>
+                                    <tr>
+                                    <th style=></th>
+                                        <td><small>%Daily Value*</small></tb>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Total Fat 10g</th>
+                                        <td>13%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Saturated Fat 7g</td>
+                                        <td> 3%</td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Trans Fat 0g</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 16%;" colspan="1">Cholesterol 0mg</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 16%;" colspan="1">Sodium 66mg</td>
+                                        <td>27%</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Total Carbohydrate 50g</th>
+                                        <td>17%</td> 
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Dietary Fiber 18g</td>
+                                        <td>72%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Sugars 7g</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Protein 7g</th>
+                                        <td></td> 
+                                    </tr>
+                                </table>
+                                <hr>
+
+                                <section>
+                                    <button type="button" class="btn btn-light m-3" data-bs-toggle="collapse" data-bs-target="#getdirections2">Get cooking directions</button>
+                                    <div class="collapes w-90 bg-dark p-5 mx-auto" id="getdirections2">
+                                        <p><u><b>Directions</b></u>
+                                            <p style="padding-bottom: 20px;">
+                                                Sauté the chicken, onion, herbs, and spices in a skillet until they start to brown.
+                                                Add the peppers, black beans, tomatoes, rice, and chicken stock.
+                                                Bring to a boil, cover, and simmer on low heat until cooked through. Let stand, covered, for 5 minutes. Top with cheese and additional toppings of your choice. ENJOY!
+                                            </p>
+                                        </p>
+                                    </div>
+                                </section>
+      
                             </p>                    
                         </div>
-            
                     </div>
+                </div>
+            </section>
+            
+
+            <section class="container">
+                <div class="row justify-content-between">
             
                     <!--card 3-->
-                    <div class="card_3 col-xl-3 col-lg-5 col-sm-10 card bg-dark">
+                    <div class="card_3 col-xl-5 col-lg-5 col-sm-10 card bg-dark">
                         <div class="card-header">
                         <p class="card-title h2">Trout Tacos &hearts;</p>
-                        <p style="color: orangered;" class="card-subtitle"> <i>#3</i></p>
+                        <p style="color: white;" class="card-subtitle"> <i>#3</i></p>
                         </div>
 
-                        <div class="card-fotter">
+                        <div class="card-fotter" style="text-align: center; padding: 10px;">
                             <nav>
                                 <a href="https://www.allrecipes.com/trout-tacos-recipe-8651121" class="card-link">More Info</a>
-                                <a href="https://www.google.com/maps/search/trout+tacos+near+me+/@40.7303115,-74.0323857,11z/data=!3m1!4b1?entry=ttu" class="card-link">Google Maps</a>
+                                <a href="https://www.google.com/maps/search/trout+tacos+near+me+/@40.7303115,-74.0323857,11z/data=!3m1!4b1?entry=ttu" class="card-link">Find on Google maps</a>
                                 <a href="feedback.html" class="card-link">Feedback</a>
                             </nav>
                             </div>
     
                         <div class="card text-bg-dark mb-3" class="card-body">
-                        <img style="width: 280px; height: 180px;" src="Trout-Tacos.jpg" alt="Photo of recipe" class="card-img">
+                        <img style="width: 280px; height: 180px;align-self: center;" src="Trout-Tacos.jpg" alt="Photo of recipe" class="card-img">
                         <p style="padding: 20px;" class="card-text">
                             <dl>
-                                <dd>4 SERVINGS</dd>
                                 <dd>US METRIC</dd>
                             </dl>
                             
@@ -201,17 +348,85 @@
                                 <li> 3 tablespoons vegetable oil for frying, or as needed</li>
                                 <li> 1/2 cup prepared guacamole, or as needed for serving</li>
                             </ol>
+                                
                             <hr>
-                            <u><b>Directions</b></u>
-                            <p>
-                                Preheat the oven to 400 degrees F (200 degrees C). Wrap tortillas in foil. 
-                                Bake tortillas in the preheated oven until warm, 8 to 10 minutes.
-                                Meanwhile, place cabbage, white parts of green onion, coleslaw mix, 3 tablespoons Mexican crema, lime zest, juice of 2 lime wedges, and cilantro in a large bowl. Toss to coat; season with salt and pepper. Set aside..
-                                Carefully remove skin from trout. Cut each trout filet into 2- to 3-inch pieces. Stir tapioca starch, cumin, chipotle powder, and Mexican oregano together in a shallow bowl.
-                                Dip fish pieces into seasoning mixture to coat.
-                                Heat oil in a large skillet over medium-high heat until hot. Add coated fish pieces; cook until golden brown and fish flakes easily with a fork, 2 to 3 minutes per side. Transfer to a drip tray, and season with salt.
-                                Using 2 corn tortillas for each taco, divide fish, slaw, and guacamole between the tacos. Garnish each with green tops of scallions. Serve with remaining lime wedges and crema on the side. Enjoy!
-                            </p>
+                            <table style="font-size: small;" class="table1">
+                                <tr>
+                                    <th colspan="3" style="text-align: center; text-decoration: underline;">Nutrition Facts</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="1" style="text-indent: 16%;">4 servings</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;"> Serving size</th>
+                                    <th>4 cup(580g)</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="1" style="text-indent: 16%;"><small>Ammount per serving</small></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;">Calories </th>
+                                    <th>1,885</th>
+                                </tr>
+                                <tr>
+                                <th style=></th>
+                                    <td><small>%Daily Value*</small></tb>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Total Fat 10g</th>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Saturated Fat 7g</td>
+                                    <td> 3%</td>                                    
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Trans Fat 0g</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 16%;" colspan="1">Cholesterol 0mg</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 16%;" colspan="1">Sodium 66mg</td>
+                                    <td>27%</td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Total Carbohydrate 50g</th>
+                                    <td>17%</td> 
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Dietary Fiber 18g</td>
+                                    <td>72%</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-indent: 18%;" colspan="1">Sugars 7g</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th style="text-indent: 16%;" colspan="1">Protein 7g</th>
+                                    <td></td> 
+                                </tr>
+                            </table>
+                            <hr>
+
+                            <section>
+                                <button type="button" class="btn btn-light m-3" data-bs-toggle="collapse" data-bs-target="#getdirections2">Get cooking directions</button>
+                                <div class="collapes w-90 bg-dark p-5 mx-auto" id="getdirections2">
+                                    <p><u><b>Directions</b></u>
+                                        <p style="padding-bottom: 20px;">
+                                            Preheat the oven to 400 degrees F (200 degrees C). Wrap tortillas in foil. 
+                                            Bake tortillas in the preheated oven until warm, 8 to 10 minutes.
+                                            Meanwhile, place cabbage, white parts of green onion, coleslaw mix, 3 tablespoons Mexican crema, lime zest, juice of 2 lime wedges, and cilantro in a large bowl. Toss to coat; season with salt and pepper. Set aside..
+                                            Carefully remove skin from trout. Cut each trout filet into 2- to 3-inch pieces. Stir tapioca starch, cumin, chipotle powder, and Mexican oregano together in a shallow bowl.
+                                            Dip fish pieces into seasoning mixture to coat.
+                                            Heat oil in a large skillet over medium-high heat until hot. Add coated fish pieces; cook until golden brown and fish flakes easily with a fork, 2 to 3 minutes per side. Transfer to a drip tray, and season with salt.
+                                            Using 2 corn tortillas for each taco, divide fish, slaw, and guacamole between the tacos. Garnish each with green tops of scallions. Serve with remaining lime wedges and crema on the side. Enjoy!
+                                        </p>
+                                    </p>
+                                </div>
+                            </section>
                             
                         </p>
                         </div>
@@ -219,26 +434,24 @@
                     </div>
             
                     <!--card 4-->
-                    <div class="card_4 col-xl-3 col-lg-5 col-sm-10 card bg-dark">
+                    <div class="card_4 col-xl-5 col-lg-5 col-sm-10 card bg-dark">
                         <div class="card-header">
                             <p class="card-title h2">Epic Summer Salad</p>
-                            <p style="color: orangered;" class="card-subtitle"> <i>#4</i></p>
+                            <p style="color: white;" class="card-subtitle"> <i>#4</i></p>
                             </div>
 
-                            <div class="card-fotter">
+                            <div class="card-fotter" style="text-align: center; padding: 10px;">
                                 <nav>
                                     <a href="https://www.bbcgoodfood.com/recipes/epic-summer-salad" class="card-link">More Info</a>
-                                    <a href="https://www.google.com/maps/search/Epic+Summer+Salad+near+me/@40.730378,-74.0324929,11z/data=!3m1!4b1?entry=ttu" class="card-link">Google Maps</a>
+                                    <a href="https://www.google.com/maps/search/Epic+Summer+Salad+near+me/@40.730378,-74.0324929,11z/data=!3m1!4b1?entry=ttu" class="card-link">Find on Google maps</a>
                                     <a href="feedback.html" class="card-link">Feedback</a>
                                 </nav>
                                 </div>
-        
                 
                             <div class="card text-bg-dark mb-3"class="card-body">
-                            <img style="width: 280px; height: 180px;" src="epic-summer-salad.jpg" alt="Photo of recipe" class="card-img">
+                            <img style="width: 280px; height: 180px;align-self: center;" src="epic-summer-salad.jpg" alt="Photo of recipe" class="card-img">
                             <p style="padding: 20px;" class="card-text">
                                 <dl>
-                                    <dd>4 SERVINGS</dd>
                                     <dd>US METRIC</dd>
                                 </dl>
                                 
@@ -266,40 +479,104 @@
                                     <li>  2 tbsp white wine vinegar</li>
                                     <li>  2 tsp honey </li>
                                 </ol>
+
                                 <hr>
-                                <u><b>Directions</b></u>
-                                <p>
-                                    STEP 1</p>
-                                <p>
-                                    Make the dressing by blending all of the ingredients in a food processor (or very finely chop them), saving a few herb leaves for the salad. You can make the dressing up to 24 hrs before serving.
-                                </p>
-                                <p>
-                                    STEP 2</p>
-                                <p style="padding-bottom: 145px;" >
-                                    Scatter the beans and spinach over a large platter. Arrange the tomatoes, cucumber, mango, onion and radishes on top and gently toss together with your hands. Top the salad with the avocados, feta and herbs, and serve the dressing on the side.
-                                </p>
+                                <table style="font-size: small;" class="table1">
+                                    <tr>
+                                        <th colspan="3" style="text-align: center; text-decoration: underline;">Nutrition Facts</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="text-indent: 16%;">4 servings</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;"> Serving size</th>
+                                        <th>4 cup(580g)</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="text-indent: 16%;"><small>Ammount per serving</small></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;">Calories </th>
+                                        <th>1,885</th>
+                                    </tr>
+                                    <tr>
+                                    <th style=></th>
+                                        <td><small>%Daily Value*</small></tb>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Total Fat 10g</th>
+                                        <td>13%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Saturated Fat 7g</td>
+                                        <td> 3%</td>                                    
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Trans Fat 0g</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 16%;" colspan="1">Cholesterol 0mg</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 16%;" colspan="1">Sodium 66mg</td>
+                                        <td>27%</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Total Carbohydrate 50g</th>
+                                        <td>17%</td> 
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Dietary Fiber 18g</td>
+                                        <td>72%</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-indent: 18%;" colspan="1">Sugars 7g</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-indent: 16%;" colspan="1">Protein 7g</th>
+                                        <td></td> 
+                                    </tr>
+                                </table>
+                                <hr>
+      
+                                <section>
+                                  <button type="button" class="btn btn-light m-3" data-bs-toggle="collapse" data-bs-target="#getdirections1">Get cooking directions</button>
+                                  <div class="collapes w-90 bg-dark p-5 mx-auto" id="getdirections1">
+                                        <p> <u><b>Directions</b></u>
+                                            <p style="padding-bottom: 20px;">
+                                                <p>
+                                                    STEP 1
+                                                </p>
+                                                <p>
+                                                    Make the dressing by blending all of the ingredients in a food processor (or very finely chop them), saving a few herb leaves for the salad. You can make the dressing up to 24 hrs before serving.
+                                                </p>
+                                                <p>
+                                                    STEP 2
+                                                </p>
+                                                <p style="padding-bottom: 145px;" >
+                                                    Scatter the beans and spinach over a large platter. Arrange the tomatoes, cucumber, mango, onion and radishes on top and gently toss together with your hands. Top the salad with the avocados, feta and herbs, and serve the dressing on the side.
+                                                </p>
+                                            </p>
+                                        </p>
+                                    </div>
+                                </section>
                             </p>                    
                         </div>
-            
                     </div>
                 </div>
-    
             </section>
   
         </main>
         <footer class="contact"id="contact">
             <div class="contactcolum">
                 <h2>Contact us</h2>
-                <a href="mailto:Jane.Dou@foodie.com" style="color: whitesmoke;">Email: Jane Dou</a>
-                <address> 11-22 333st, Queens, NY, 11377 </address>
+                <a href="mailto:Jenny.Burdier@foodie.com" style="color: whitesmoke;">Email: Jenny Burdier</a>
+                <address> 11-22 333st, Queens, NY, 11223, USA </address>
             </div>
-    
-            <div class="contactcolum">
-                <h2>Policies</h2>
-                <a class="policieslink" href="https://www.cuny.edu/website/privacy-policy/"target="_blank">Privacy Policy</a>
-                <a class="policieslink" href="http://www.qcc.cuny.edu/titleix/index.html" target="_blank"> Title IX</a>
-            </div>
-    
+        
             <div class="contactcolum">
                 <h2>Follow Us</h2>
                 <a href="https://www.facebook.com/QueensboroughCUNY" target="_blank" rel="noopener noreferrer"><img src="facebook_icon.svg" alt="follow us on facebook icon"class="followicon">
@@ -310,6 +587,8 @@
     
             </div>
             </footer>
+            <p class="contactend" style="text-align: center; padding-top: 5px;">Website by Jenny Burdier </p>
+
 
 
       
