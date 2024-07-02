@@ -1,7 +1,7 @@
-""""""
-# Jenny Burdier
-# Monday, June 24, 2024
-""""""
+"""
+Jenny Burdier
+Monday, June 24, 2024
+"""
 
 print("Welcome to Python")
 # declaring variables
