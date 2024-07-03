@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+.quotesform{
+    width: 500px;
+    margin: 50px auto;     
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 12px;
+}
+.controlform{
+    margin-top: 50px;
+}
+.controlform label{
+    display: block;
+    font-weight: bolder;
+}
+.controlform input, .controlform textarea{
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+.submitbtn{
+    background-color: red;
+    font-size: 1.1em;
+}
+
