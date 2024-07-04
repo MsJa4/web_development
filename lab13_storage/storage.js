@@ -32,7 +32,7 @@ myform.addEventListener("submit", function(event){
 //Collect the elements//
 
 const formitem1 = document.querySelector(".formitem1")
-const itemname = document.querySelector('.itemname')
+const itemname = document.querySelector('.itemname').textContent
 const itemdescription = document.querySelector('.itemdescription').textContent
 const saleprice = document.querySelector('.saleprice').textContent
 const imgitem1 = document.querySelector(".imgitem1").getAttribute('src')

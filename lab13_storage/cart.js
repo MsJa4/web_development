@@ -24,7 +24,7 @@ const totalprice = (priceitem*quantityitem).toFixed(2)
 //append imge and item description//
 let image = document.createElement('img')
 image.src = sessionStorage.getItem('item_image')
-image.style.width = "50px"
+image.style.width = "90px"
 
 itemimg_display.append(image)
 
