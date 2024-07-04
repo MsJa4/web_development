@@ -10,9 +10,9 @@
 }
 
 /*Items to cart*/
-img{width: 100%}
+img{width: 100%,}
 .item1{
-    width: 230px;
+    width: 200;
     height: 450px;
     box-shadow: 1px 1px 3px gray;
     padding: 12px;
@@ -29,10 +29,6 @@ img{width: 100%}
     color: rgb(11, 11, 11);
     font-size:  1.3em;
 }
-.itemdescription{
-    color: darkslategray;
-    margin-top: -20px;
-}
 .saleprice{color: red; font-size: 1.3em;}
 .item1btn{
     display: block;
@@ -45,23 +41,31 @@ img{width: 100%}
 
 /* Shopping Cart**/
 .bagcontainer{
-    width: 100px;
+    width: 1000px;
     margin: auto;
-    border: solid 1px black;
     display: flex;
     flex-wrap: nowrap;
+    text-align: center;
+}
+.itemimg h2, .itemprice h2 .itemdescription h2 .itemquantity h2, .totalprice_item h2{
+    background-color: lightblue;
+    text-align: center;
 }
 .itemimg{
     width: 30%;
+    pad: 12px;
 }
 .itemdescription{
     width: 30%;
+
 }
 .itemprice{
     width: 15%;
+
 }
 .itemquantity{
     width: 10%;
+
 }
 .totalprice_item{
     width: 15%;
